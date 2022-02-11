@@ -1,0 +1,59 @@
+@import "../sass-style";
+
+
+.product-header {
+    display: flex;
+
+
+    .product-img {
+        width: 80px;
+        margin-right: 10px;
+        flex-shrink: 0;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+
+    .product-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.6rem;
+
+        .product-intro-name,
+        .product-intro-brand {
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        .product-intro-brand {
+            color: $gray;
+        }
+
+        .product-intro-price::first-letter {
+            font-size: 19px;
+            color: $darken-white;
+        }
+    }
+
+}
+
+
+.product-info {
+    margin: 0.6rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: $darken-white;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+
+}
+
+
+.product-descrption {
+    margin: 0;
+    color: $white;
+    font-size: 0.8rem;
+}

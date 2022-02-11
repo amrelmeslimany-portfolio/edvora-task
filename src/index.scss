@@ -1,0 +1,39 @@
+@import "./sass-style";
+
+@font-face {
+  font-family: "SR Pro Bold";
+  src: url("../public/assets/fonts/SFPRODISPLAYBOLD.OTF");
+}
+
+@font-face {
+  font-family: "SR Pro Medium";
+  src: url("../public/assets/fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+
+@font-face {
+  font-family: "SR Pro Regular";
+  src: url("../public/assets/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 2rem;
+  font-family: "SR Pro Regular", sans-serif;
+  letter-spacing: 2px;
+  color: $white;
+}
+
+
+.box {
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.black {
+  background-color: $darker-black-color;
+}
+
+.custom-h {
+  margin: 0 0 0.4rem;
+}

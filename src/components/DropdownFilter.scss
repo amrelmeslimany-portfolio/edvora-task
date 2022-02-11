@@ -1,0 +1,24 @@
+@import "../sass-style";
+
+
+.wrap-dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    select {
+        background-color: $dropdown-color;
+        border: none;
+        padding: 0.8rem 1rem;
+        border-radius: 5px;
+        color: $white;
+        font-size: 1.08rem;
+        cursor: pointer;
+
+
+        &:focus {
+            outline: 1px solid $gray;
+        }
+
+    }
+}

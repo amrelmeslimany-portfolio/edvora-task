@@ -1,0 +1,76 @@
+@import "../sass-style";
+
+
+.product-with-brand {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .title-3 {
+        color: $darken-white;
+        @include border-bottom;
+        padding-bottom: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .wrap-scroller-products {
+        display: flex;
+        gap: 0.6rem;
+
+        .arrow {
+            filter: contrast(0);
+            align-self: center;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            &:hover {
+                filter: contrast(0.2);
+            }
+        }
+
+        .wrap-products {
+            flex-grow: 1;
+            list-style: none;
+            margin: 0;
+            background-color: $darker-black-color;
+            padding: 0.8rem 1.2rem;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            gap: 0.6rem;
+            overflow-x: auto;
+
+            &::-webkit-scrollbar {
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: $darker-black-color;
+                height: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $background-color;
+                height: 5px;
+                cursor: pointer;
+            }
+
+
+
+
+            li {
+                background-color: $background-color;
+                border-radius: 5px;
+                padding: 0.6rem;
+                flex-shrink: 0;
+                width: 250px;
+                transition: 0.2s;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+}

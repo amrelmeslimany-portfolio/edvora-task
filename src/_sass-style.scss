@@ -1,0 +1,14 @@
+$background-color: #292929;
+$darker-black-color: #131313;
+$dropdown-color: #232323;
+$gray: #A5A5A5;
+$white: white;
+$darken-white:#CBCBCB;
+
+
+
+
+
+@mixin border-bottom {
+    border-bottom: 1px solid $darken-white;
+}
